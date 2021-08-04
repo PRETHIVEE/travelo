@@ -77,6 +77,9 @@ body {
   font-size: 20px;
   font-weight: 600;
 }
+.price {
+  background-color: rgb(253, 253, 120);
+}
 button {
   margin-top: 10px;
   padding: 5px 10px 5px 10px;

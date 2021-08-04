@@ -1,4 +1,4 @@
-{% load static %}
+{% load static %} {% static "pictures" as baseUrl%}
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -33,46 +33,18 @@
       <h1>We have the best tours</h1>
     </div>
     <div class="tourarea">
+      {% for dest in dests %}
       <div class="content">
-        <img src="{% static './pictures/pic1.jpg' %}" alt="" />
+        <img src="{{baseUrl}}/{{dest.img}}" alt="" />
         <div class="contentDetails">
-          <div class="days">Duration - {{dest1.days}} day tour</div>
-          <div class="location">Location - {{dest1.location}}</div>
-          <div class="country">Country - {{dest1.country}}</div>
-          <div class="price">From - ₹ {{dest1.price}}</div>
+          <div class="days">Duration - {{dest.days}} day tour</div>
+          <div class="location">Location - {{dest.location}}</div>
+          <div class="country">Country - {{dest.country}}</div>
+          <div class="price">From - ₹ {{dest.price}}</div>
           <button>Select Package</button>
         </div>
       </div>
-      <div class="content">
-        <img src="{% static './pictures/pic2.jpg' %}" alt="" />
-        <div class="contentDetails">
-          <div class="days">Duration - 8 day tour</div>
-          <div class="location">Location - Kerala</div>
-          <div class="country">Country - India</div>
-          <div class="price">Price - ₹ 5000</div>
-          <button>Select Package</button>
-        </div>
-      </div>
-      <div class="content">
-        <img src="{% static './pictures/pic3.jpg' %}" alt="" />
-        <div class="contentDetails">
-          <div class="days">Duration - 8 day tour</div>
-          <div class="location">Location - Kerala</div>
-          <div class="country">Country - India</div>
-          <div class="price">Price - ₹ 5000</div>
-          <button>Select Package</button>
-        </div>
-      </div>
-      <div class="content">
-        <img src="{% static './pictures/pic4.jpg' %}" alt="" />
-        <div class="contentDetails">
-          <div class="days">Duration - 7 day tour</div>
-          <div class="location">Location - Paris</div>
-          <div class="country">Country - England</div>
-          <div class="price">Price - ₹ 10000</div>
-          <button id="myBtn">Select Package</button>
-        </div>
-      </div>
+      {% endfor %}
     </div>
     <footer>
       <h5>&copy; Copyright 2021 abc tourism</h5>
