@@ -87,7 +87,6 @@ button {
   background-color: rgb(18, 137, 255);
   color: white;
   border: none;
-  border-radius: 5px;
   cursor: pointer;
 }
 button:hover {

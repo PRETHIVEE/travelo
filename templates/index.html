@@ -35,7 +35,7 @@
     <div class="tourarea">
       {% for dest in dests %}
       <div class="content">
-        <img src="{{baseUrl}}/{{dest.img}}" alt="" />
+        <img src="{{dest.img.url}}" alt="" />
         <div class="contentDetails">
           <div class="days">Duration - {{dest.days}} day tour</div>
           <div class="location">Location - {{dest.location}}</div>
