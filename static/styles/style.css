@@ -1,0 +1,103 @@
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+.topbar {
+  width: 100%;
+  height: 60px;
+  background-color: rgb(56, 56, 56);
+  color: rgb(246, 246, 246);
+  margin-top: -23px;
+  text-align: justify;
+}
+.topbar > h1 {
+  padding-top: 8px;
+  padding-left: 20px;
+}
+#coverpic {
+  width: 100%;
+  height: 400px;
+}
+.notes {
+  background-color: rgb(25, 143, 149);
+  margin-top: -31px;
+  text-align: center;
+}
+.notes > h1 {
+  padding-top: 14px;
+  font-size: 45px;
+  color: rgb(255, 252, 252);
+}
+.notes > h2 {
+  margin-top: -20px;
+  font-size: 25px;
+  font-family: cursive;
+  color: rgb(255, 252, 252);
+  padding-bottom: 25px;
+}
+.title > h1 {
+  font-size: 40px;
+  color: dodgerblue;
+  text-align: center;
+}
+.tourarea {
+  background-color: rgb(114, 116, 116);
+  padding-bottom: 20px;
+}
+.content {
+  border-radius: 20px;
+  display: inline-block;
+  margin: 10px;
+  margin-left: 35px;
+  margin-top: 25px;
+  padding: 0;
+}
+.content > img {
+  width: 350px;
+  height: 300px;
+}
+.contentDetails {
+  background-color: rgb(244, 251, 248);
+  padding: 20px;
+  margin-top: -10px;
+}
+.days {
+  color: orange;
+  font-size: 18px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+.location,
+.country,
+.price {
+  color: black;
+  font-size: 20px;
+  font-weight: 600;
+}
+button {
+  margin-top: 10px;
+  padding: 5px 10px 5px 10px;
+  font-size: 20px;
+  background-color: rgb(18, 137, 255);
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+button:hover {
+  background-color: #04b309;
+}
+footer {
+  background-color: rgb(51, 159, 246);
+  margin-top: -28px;
+  width: 100%;
+  height: 40px;
+  text-align: center;
+}
+footer > h5 {
+  padding-top: 5px;
+  font-size: 18px;
+}
