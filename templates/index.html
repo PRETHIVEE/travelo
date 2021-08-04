@@ -14,7 +14,11 @@
         <h1>ABC tourism</h1>
       </div>
       <div class="coverpic">
-        <img id="coverpic" src="./pictures/coverpic.png" alt="cover picture" />
+        <img
+          id="coverpic"
+          src="{% static './pictures/coverpic.png' %}"
+          alt="cover picture"
+        />
       </div>
     </div>
     <div class="notes">
@@ -30,7 +34,17 @@
     </div>
     <div class="tourarea">
       <div class="content">
-        <img src="./pictures/pic1.jpg" alt="" />
+        <img src="{% static './pictures/pic1.jpg' %}" alt="" />
+        <div class="contentDetails">
+          <div class="days">Duration - {{dest1.days}} day tour</div>
+          <div class="location">Location - {{dest1.location}}</div>
+          <div class="country">Country - {{dest1.country}}</div>
+          <div class="price">From - ₹ {{dest1.price}}</div>
+          <button>Select Package</button>
+        </div>
+      </div>
+      <div class="content">
+        <img src="{% static './pictures/pic2.jpg' %}" alt="" />
         <div class="contentDetails">
           <div class="days">Duration - 8 day tour</div>
           <div class="location">Location - Kerala</div>
@@ -40,7 +54,7 @@
         </div>
       </div>
       <div class="content">
-        <img src="./pictures/pic2.jpg" alt="" />
+        <img src="{% static './pictures/pic3.jpg' %}" alt="" />
         <div class="contentDetails">
           <div class="days">Duration - 8 day tour</div>
           <div class="location">Location - Kerala</div>
@@ -50,17 +64,7 @@
         </div>
       </div>
       <div class="content">
-        <img src="./pictures/pic3.jpg" alt="" />
-        <div class="contentDetails">
-          <div class="days">Duration - 8 day tour</div>
-          <div class="location">Location - Kerala</div>
-          <div class="country">Country - India</div>
-          <div class="price">Price - ₹ 5000</div>
-          <button>Select Package</button>
-        </div>
-      </div>
-      <div class="content">
-        <img src="./pictures/pic4.jpg" alt="" />
+        <img src="{% static './pictures/pic4.jpg' %}" alt="" />
         <div class="contentDetails">
           <div class="days">Duration - 7 day tour</div>
           <div class="location">Location - Paris</div>
